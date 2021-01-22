@@ -1,3 +1,4 @@
+#Code by IG@kamran_hccp
 # DATABASE account holders
 customerNames = ['HASNAT', 'KAMRAN', 'FIZZA', 'RAZA', 'HAMZA', 'ASMA', 'HAIDER', 'ADIL', 'LAIBA', 'ALEESHA', 'HASNAIN',
                  'ABUZAR']
@@ -14,6 +15,7 @@ withdrawal = 0
 balance = 0
 i = 0
 
+#Code by IG@kamran_hccp
 # This statement in program run continuously
 while True:
     # Welcome Note for our banking system
@@ -38,6 +40,7 @@ while True:
               "A. Current Account. \n"
               "B. Savings Account. \n"
               "C. Youth Account.     ")
+        #Code by IG@kamran_hccp
         #for account selection whether SAVING, CURRENT or YOUTH Account
         account_type = input("Enter your Account Type(C/S/Y): ")
         if account_type.upper() == "Y":
@@ -71,6 +74,7 @@ while True:
                 print("=====================")
 
                 # print("New account created successfully!")
+                #Code by IG@kamran_hccp
                 print("Youth Account Created SuccessfulL! Details added to System!")
                 print("\n")
                 print("Note! Please remember your Pin!")
@@ -145,6 +149,7 @@ while True:
                 print("\n")
                 print("Note! Please remember your Pin!")
                 print("<=====================================>")
+                #Code by IG@kamran_hccp
         else:
             print("You are not eligible for Account Opening.\n")
 
@@ -169,6 +174,7 @@ while True:
                 if name.upper() == customerNames[k] :
                     if pin == customerPins[k] :
                         j = j + 1
+                        #Code by IG@kamran_hccp
                         # These few statement would show the balance taken from the list.
                         print("Your Current Balance:", end=" ")
                         print(customerBalances[k], end=" ")
@@ -192,6 +198,7 @@ while True:
                             customerBalances[k] = balance
                             print("Your New Balance: ", balance, end=" ")
                             print("-/Rs\n")
+                            #Code by IG@kamran_hccp
                         else :
                             # Else condition mentioned above is to do withdrawal if the balance is greater than the
                             # withdraw amount.
@@ -214,6 +221,7 @@ while True:
     elif choiceNumber == "3":
         print("You wants to Deposit Amount!")
         n = 0
+        #Code by IG@kamran_hccp
         # The while loop below would work when the pin or the username is wrong.
         while n < 1:
             k = -1
@@ -244,9 +252,11 @@ while True:
                 print("Account Holder Name and Pin does not match! Try Again>>\n")
                 break
 
+        #Code by IG@kamran_hccp
         mainMenu = input("Enter any Key to Continue to Main Menu...") #main menu
 
 
+    #Code by IG@kamran_hccp
     # For customrers List
     elif choiceNumber == "4":
         print()
@@ -264,6 +274,7 @@ while True:
                 print("\n")
                 k = k + 1
                 print("")
+                #Code by IG@kamran_hccp
         else:
             print("\nYou enter Wrong Admin ID or Password!")
             print("System Closed!")
@@ -273,6 +284,7 @@ while True:
 
 
     # For closing/Quiting system
+    #Code by IG@kamran_hccp
     elif choiceNumber == "5":
         # These statements would be just showed to the customer.
         print("Thank you for using COMSATS Banking System!")
@@ -286,3 +298,5 @@ while True:
         # This statement below helps the user to go back to the start of the program (main menu).
         mainMenu = input("Enter any Key to Continue to Main Menu...")
 
+                
+        #Code by IG@kamran_hccp
